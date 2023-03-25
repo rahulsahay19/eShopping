@@ -19,8 +19,7 @@ public class BasketController : ApiController
     private readonly ILogger<BasketController> _logger;
     private readonly ICorrelationIdGenerator _correlationIdGenerator;
 
-    public BasketController(IMediator mediator, IPublishEndpoint publishEndpoint, ILogger<BasketController> logger,
-        ICorrelationIdGenerator correlationIdGenerator)
+    public BasketController(IMediator mediator, IPublishEndpoint publishEndpoint, ILogger<BasketController> logger, ICorrelationIdGenerator correlationIdGenerator)
     {
         _mediator = mediator;
         _publishEndpoint = publishEndpoint;
@@ -28,7 +27,7 @@ public class BasketController : ApiController
         _correlationIdGenerator = correlationIdGenerator;
         _logger.LogInformation("CorrelationId {correlationId}:", _correlationIdGenerator.Get());
     }
-    
+
     [HttpGet]
     [Route("[action]/{userName}", Name = "GetBasketByUserName")]
     [ProducesResponseType(typeof(ShoppingCartResponse), (int) HttpStatusCode.OK)]
@@ -43,7 +42,6 @@ public class BasketController : ApiController
     [ProducesResponseType(typeof(ShoppingCartResponse), (int) HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCartResponse>> UpdateBasket([FromBody] CreateShoppingCartCommand createShoppingCartCommand)
     {
-        
         var basket = await _mediator.Send(createShoppingCartCommand);
         return Ok(basket);
     }

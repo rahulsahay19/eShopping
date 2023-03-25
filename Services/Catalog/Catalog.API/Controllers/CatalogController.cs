@@ -27,7 +27,6 @@ public class CatalogController : ApiController
     [HttpGet]
     [Route("[action]/{id}", Name = "GetProductById")]
     [ProducesResponseType(typeof(ProductResponse), (int)HttpStatusCode.OK)]
-    [ProducesResponseType((int)HttpStatusCode.NotFound)]
     public async Task<ActionResult<ProductResponse>> GetProductById(string id)
     {
         var query = new GetProductByIdQuery(id);

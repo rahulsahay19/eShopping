@@ -9,14 +9,9 @@ using Discount.Grpc.Protos;
 using HealthChecks.UI.Client;
 using MassTransit;
 using MediatR;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -51,15 +46,6 @@ public class Startup
         {
             options.GroupNameFormat = "'v'VVV";
             options.SubstituteApiVersionInUrl = true;
-        services.AddApiVersioning();
-        services.AddCors(options =>
-        {
-            options.AddPolicy("CorsPolicy", policy =>
-            {
-                //TODO read the same from settings for prod deployment
-                policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-            });
-        });
         });
         //Redis Settings
         services.AddStackExchangeRedisCache(options =>
@@ -89,29 +75,13 @@ public class Startup
             });
         });
         services.AddMassTransitHostedService();
-        //Identity Server changes
-        // var userPolicy = new AuthorizationPolicyBuilder()
-        //     .RequireAuthenticatedUser()
-        //     .Build();
-        //
-        // services.AddControllers(config =>
-        // {
-        //     config.Filters.Add(new AuthorizeFilter(userPolicy));
-        // });
-        //
-        // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        //     .AddJwtBearer(options =>
-        //     {
-        //         options.Authority = "https://localhost:9009";
-        //         options.Audience = "Basket";
-        //     });
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
     {
         if (env.IsDevelopment())
         {
-            app.UseDeveloperExceptionPage();  
+            app.UseDeveloperExceptionPage();
             app.UseSwagger();
             app.UseSwaggerUI(options => {
 
@@ -121,12 +91,9 @@ public class Startup
                 }
             });
         }
-        
 
         app.UseHttpsRedirection();
         app.UseRouting();
-        app.UseCors("CorsPolicy");
-        app.UseAuthentication();
         app.UseAuthorization();
         app.UseEndpoints(endpoints =>
         {
