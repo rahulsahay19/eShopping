@@ -9,7 +9,6 @@ using Microsoft.Extensions.Hosting;
 using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-using Ocelot.Provider.Kubernetes;
 
 namespace Ocelot.ApiGateway;
 
@@ -24,19 +23,18 @@ public class Startup
                 policy => { policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin(); });
         });
         //var authScheme = "EShoppingGatewayAuthScheme";
-       // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             // .AddJwtBearer(authScheme, options =>
             // {
             //     options.Authority = "https://localhost:9009";
             //     options.Audience = "EShoppingGateway";
             // });
-        //     .AddJwtBearer(options =>
-        //     {
-        //         options.Authority = "https://localhost:9009";
-        //         options.Audience = "EShoppingGateway";
-        //     });
+            .AddJwtBearer(options =>
+            {
+                options.Authority = "https://localhost:9009";
+                options.Audience = "EShoppingGateway";
+            });
         services.AddOcelot()
-            .AddKubernetes()
             .AddCacheManager(o => o.WithDictionaryHandle());
     }
 
