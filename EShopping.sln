@@ -54,16 +54,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.ApiGateway", "ApiGat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopping.Identity", "Infrastructure\EShopping.Identity\EShopping.Identity.csproj", "{5ECB295C-DA62-49E7-A1A4-CFFB046646AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{EE5614B3-C577-406E-ABEC-285FBF5A7A3E}"
-	ProjectSection(SolutionItems) = preProject
-		ApiGateways\nginx\nginx.Dockerfile = ApiGateways\nginx\nginx.Dockerfile
-		ApiGateways\nginx\nginx.local.conf = ApiGateways\nginx\nginx.local.conf
-		ApiGateways\nginx\id-local.conf = ApiGateways\nginx\id-local.conf
-		ApiGateways\nginx\id-local.crt = ApiGateways\nginx\id-local.crt
-		ApiGateways\nginx\id-local.key = ApiGateways\nginx\id-local.key
-		ApiGateways\nginx\id-local.pfx = ApiGateways\nginx\id-local.pfx
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,7 +83,6 @@ Global
 		{7D76852C-F766-4135-BDE6-CBDA14C73149} = {C3FFD898-F4A7-41F8-B697-B28D3D448964}
 		{C654EAC8-A96E-4674-A13F-DAE9DA55BC61} = {84F15BEF-B62B-476F-BBE1-6EDABD65613D}
 		{5ECB295C-DA62-49E7-A1A4-CFFB046646AB} = {C3FFD898-F4A7-41F8-B697-B28D3D448964}
-		{EE5614B3-C577-406E-ABEC-285FBF5A7A3E} = {84F15BEF-B62B-476F-BBE1-6EDABD65613D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3E11509A-D085-4E20-8D8E-A6CD51CDC2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

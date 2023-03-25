@@ -1,5 +1,7 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
+COPY ApiGateways/nginx/id-local.crt /usr/local/share/ca-certificates/id-local.crt
+RUN update-ca-certificates
 EXPOSE 80
 EXPOSE 443
 

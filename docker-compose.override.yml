@@ -1,18 +1,6 @@
 version: '3.4'
 
 services:
-  reverseproxy:
-    container_name: nginxgateway
-    restart: always
-    depends_on:
-      - identityserver
-      - catalog.api
-      - basket.api
-      - discount.api
-      - ordering.api
-    ports:
-      - "44344:44344"      
-        
   catalogdb:
     container_name: catalogdb
     restart: always
@@ -146,11 +134,11 @@ services:
     ports:
       - "9010:80"  
   
-  identityserver:
-      container_name: identityserver
-      environment:
-        - ASPNETCORE_ENVIRONMENT=Development
-        - ASPNETCORE_URLS=http://*:9011      
-      ports:
-        - "9011:9011"
+#  identityserver:
+#      container_name: identityserver
+#      environment:
+#        - ASPNETCORE_ENVIRONMENT=Development
+#        - ASPNETCORE_URLS=http://*:9011      
+#      ports:
+#        - "9011:9011"
     

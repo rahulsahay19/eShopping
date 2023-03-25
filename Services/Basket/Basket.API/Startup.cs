@@ -37,12 +37,7 @@ public class Startup
                 //TODO read the same from settings for prod deployment
                 policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
             });
-        }).AddVersionedApiExplorer(
-            options =>
-            {
-                options.GroupNameFormat = "'v'VVV";
-                options.SubstituteApiVersionInUrl = true;
-            });
+        });
         //Redis Settings
         services.AddStackExchangeRedisCache(options =>
         {
@@ -82,41 +77,20 @@ public class Startup
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
             {
-                options.Authority = "https://id-local.eshopping.com:44344";
+                options.Authority = "https://localhost:9009";
                 options.Audience = "Basket";
             });
     }
 
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        var nginxPath = "/basket";
-        if (env.IsEnvironment("Local"))
+        if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();  
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Basket.API v1"));
         }
-        if (env.IsDevelopment())
-        {
-            app.UseDeveloperExceptionPage();
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
-            app.UseSwagger();
-            app.UseSwaggerUI(options =>
-            {
-                foreach (var description in provider.ApiVersionDescriptions)
-                {
-                    options.SwaggerEndpoint($"{nginxPath}/swagger/{description.GroupName}/swagger.json",
-                        $"Basket API {description.GroupName.ToUpperInvariant()}");
-                    options.RoutePrefix = string.Empty;
-                }
-
-                options.DocumentTitle = "Basket API Documentation";
-
-            });
-        }
+        
 
         app.UseHttpsRedirection();
         app.UseRouting();
