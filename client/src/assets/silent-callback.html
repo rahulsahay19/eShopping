@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1024, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Silent-Callback</title>
+        <script src="./js/oidc-client.min.js"></script>
+    </head>
+    <body>
+        <script>
+            const idpSettings = {
+                authority: "https://localhost:9009",
+                clientId: "angular-client",
+                scope: "openid profile eshoppinggateway",
+                response_type: "code"
+            };
+
+            new Oidc.UserManager(idpSettings).signinSilentCallback()
+                .catch(error => {
+                    console.log(error);
+                });
+        </script>
+    </body>
+</html>

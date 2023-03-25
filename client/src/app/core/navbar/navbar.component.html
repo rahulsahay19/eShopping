@@ -1,0 +1,25 @@
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
+  <div class="d-flex align-center">
+      <img src="/assets/images/logo.png" style="max-height: 70px;" alt="myview" class="logo" routerLink="/" />
+      <h5 class="my-0 ml-md-2 font-weight-normal"></h5>
+  </div>
+
+    <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: larger;">
+      <a class="p-2" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a class="p-2" routerLink="/store" routerLinkActive="active">Store</a>
+      <a class="p-2" target="_blank" href="https://github.com/rahulsahay19/eShopping">GitHub</a>
+      <a class="p-2" href="https://twitter.com/rahulsahay19" target="_blank" title="Twitter">Twitter</a>
+
+    </nav>
+    <div class="d-flex align-center">
+      <a routerLink="/basket" class="position-relative">
+        <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
+        <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
+            {{getBasketCount(basket.items)}}
+        </div>
+      </a>
+      <section>
+        <button *ngIf="!isUserAuthenticated" class="btn btn-link" style="color:gray" (click)="login()">Login</button>
+        <button *ngIf="isUserAuthenticated" class="btn btn-link" style="color:gray" (click)="logout()">Logout</button>
+      </section>
+    </div>
