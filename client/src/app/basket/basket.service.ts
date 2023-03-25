@@ -1,8 +1,6 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
-import { AcntService } from '../account/acnt.service';
 import { Basket, IBasket, IBasketItem, IBasketTotal } from '../shared/models/basket';
 import { IProduct } from '../shared/models/product';
 
@@ -10,8 +8,8 @@ import { IProduct } from '../shared/models/product';
   providedIn: 'root'
 })
 export class BasketService {
-  baseUrl = 'https://localhost:9010';
-  constructor(private http: HttpClient, private acntService: AcntService, private router: Router) { }
+  baseUrl = 'http://localhost:9010';
+  constructor(private http: HttpClient) { }
   private basketSource = new BehaviorSubject<Basket | null>(null);
   basketSource$ = this.basketSource.asObservable();
   private basketTotal = new BehaviorSubject<IBasketTotal | null>(null);
@@ -31,21 +29,6 @@ export class BasketService {
       next: basket =>{
         this.basketSource.next(basket);
         this.calculateBasketTotal();
-      }
-    });
-  }
-
-  checkoutBasket(basket: IBasket){
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/json',
-        'Authorization': this.acntService.authorizationHeaderValue
-      })
-    };
-    return this.http.post<IBasket>(this.baseUrl +'/Basket/CheckoutV2', basket, httpOptions).subscribe({
-      next: basket =>{
-        this.basketSource.next(null);
-        this.router.navigateByUrl('/');
       }
     });
   }

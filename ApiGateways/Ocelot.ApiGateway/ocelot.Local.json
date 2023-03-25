@@ -111,10 +111,10 @@
       "UpstreamPathTemplate": "/Basket/CreateBasket",
       "UpstreamHttpMethod": [
         "POST"
-      ]
-//      "AuthenticationOptions": {
-//        "AuthenticationProviderKey": "EShoppingGatewayAuthScheme"
-//      }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "EShoppingGatewayAuthScheme"
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Basket/Checkout",
@@ -126,25 +126,6 @@
         }
       ],
       "UpstreamPathTemplate": "/Basket/Checkout",
-      "UpstreamHttpMethod": [ "POST" ],
-      "RateLimitOptions": {
-        "ClientWhitelist": [],
-        "EnableRateLimiting": true,
-        "Period": "3s",
-        "PeriodTimespan": 1,
-        "Limit": 1
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/v2/Basket/Checkout",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": "9001"
-        }
-      ],
-      "UpstreamPathTemplate": "/Basket/CheckoutV2",
       "UpstreamHttpMethod": [ "POST" ],
       "RateLimitOptions": {
         "ClientWhitelist": [],

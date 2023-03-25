@@ -22,18 +22,13 @@ public class Startup
             options.AddPolicy("CorsPolicy",
                 policy => { policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin(); });
         });
-        //var authScheme = "EShoppingGatewayAuthScheme";
-        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            // .AddJwtBearer(authScheme, options =>
-            // {
-            //     options.Authority = "https://localhost:9009";
-            //     options.Audience = "EShoppingGateway";
-            // });
-            .AddJwtBearer(options =>
-            {
-                options.Authority = "https://localhost:9009";
-                options.Audience = "EShoppingGateway";
-            });
+        // var authScheme = "EShoppingGatewayAuthScheme";
+        // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        //     .AddJwtBearer(authScheme, options =>
+        //     {
+        //         options.Authority = "https://localhost:9009";
+        //         options.Audience = "EShoppingGateway";
+        //     });
         services.AddOcelot()
             .AddCacheManager(o => o.WithDictionaryHandle());
     }

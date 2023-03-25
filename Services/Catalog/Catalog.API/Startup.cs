@@ -59,8 +59,8 @@ public class Startup
         // {
         //     config.Filters.Add(new AuthorizeFilter(userPolicy));
         // });
-        //
-        //
+
+
         // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         //         .AddJwtBearer(options =>
         //         {

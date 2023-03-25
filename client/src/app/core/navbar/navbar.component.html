@@ -18,8 +18,6 @@
             {{getBasketCount(basket.items)}}
         </div>
       </a>
-      <section>
-        <button *ngIf="!isUserAuthenticated" class="btn btn-link" style="color:gray" (click)="login()">Login</button>
-        <button *ngIf="isUserAuthenticated" class="btn btn-link" style="color:gray" (click)="logout()">Logout</button>
-      </section>
+      <a routerLink="/account/login" class="btn btn-outline-secondary me-2">Login</a>
+      <a routerLink="/account/register" class="btn btn-outline-secondary me-3">Sign up</a>
     </div>
