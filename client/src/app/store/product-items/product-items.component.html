@@ -1,0 +1,16 @@
+<div class="card h-100 shadow-sm" *ngIf="product">
+  <div class="image position-relative;" style="cursor: pointer;">
+    <img src="{{ product.imageFile }}" alt="{{ product.name }}" class="img-fluid bg-light"/>
+    <div class="d-flex align-items-center justify-content-center hover-overlay">
+      <button (click)="addItemToBasket()" type="button" class="btn btn-primary fa fa-shopping-cart mr-2"></button>
+      <button routerLink="/store/{{product.id}}" type="button" class="btn btn-primary">View</button>
+    </div>
+  </div>
+
+  <div class="card-body d-flex flex-column">
+    <a>
+      <h6 class="text-uppercase">{{ product.name }}</h6>
+    </a>
+    <span class="mb-2" style="font-size: 1.5em;">{{ product.price | currency: "INR" }}</span>
+   </div>
+</div>

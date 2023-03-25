@@ -10,10 +10,12 @@ namespace Ordering.API.Controllers;
 public class OrderController : ApiController
 {
     private readonly IMediator _mediator;
-
-    public OrderController(IMediator mediator)
+    private readonly ILogger<OrderController> _logger;
+    
+    public OrderController(IMediator mediator, ILogger<OrderController> logger)
     {
         _mediator = mediator;
+        _logger = logger;
     }
     
     [HttpGet("{userName}", Name = "GetOrdersByUserName")]

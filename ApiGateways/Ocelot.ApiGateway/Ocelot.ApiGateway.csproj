@@ -7,8 +7,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Ocelot" Version="18.0.0" />
-      <PackageReference Include="Ocelot.Cache.CacheManager" Version="18.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.14" />
+        <PackageReference Include="Ocelot" Version="18.0.0" />
+        <PackageReference Include="Ocelot.Cache.CacheManager" Version="18.0.0" />
+        <PackageReference Include="Ocelot.Provider.Kubernetes" Version="18.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\Common.Logging\Common.Logging.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="ocelot.k8s.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

@@ -1,0 +1,11 @@
+<div class="bg-info px-4 text-uppercase font-weight-bold">
+  Order Details
+</div>
+<div class="p-4">
+   <ul class="list-unstyled mb-4" *ngIf="(basketService.basketTotal$ | async) as total">
+        <li class="d-flex justify-between py-3 border-bottom">
+          <strong class="text-muted">Total: </strong>
+          <strong>{{total.total | currency: 'INR'}}</strong>
+      </li>
+  </ul>
+</div>

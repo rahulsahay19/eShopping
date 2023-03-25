@@ -1,0 +1,76 @@
+# Default values for basket.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  registry: eshopping.azurecr.io
+  repository: eshopping.azurecr.io/basketapi
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "v1"
+
+imagePullSecrets:
+  - name: acr-secret
+
+nameOverride: ""
+fullnameOverride: "basket"
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: LoadBalancer
+  port: 80
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+# env defines the environment variables that will be declared in the pod
+env:
+  values:
+  - name: ASPNETCORE_ENVIRONMENT
+    value: Development
+  urls:
+  # configmap declares variables which value is taken from the config map defined in template configmap.yaml (name is name of var and key the key in configmap).
+  configmap:
+    - name: CacheSettings__ConnectionString
+      key: CacheSettings__ConnectionString
+    - name: GrpcSettings__DiscountUrl
+      key: GrpcSettings__DiscountUrl
+    - name: EventBusSettings__HostAddress
+      key: EventBusSettings__HostAddress
+    - name: ElasticConfiguration__Uri
+      key: ElasticConfiguration__Uri
+ingress:
+  enabled: false

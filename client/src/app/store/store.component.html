@@ -1,0 +1,91 @@
+<div class="container">
+  <div class="row">
+
+      <section class="col-3">
+        <ng-container *ngIf="products">
+          <h5 class="text-warning mb-3">Sort</h5>
+          <select
+          class="custom-select mb-3"
+          (change)="onSortSelected($any($event.target).value)">
+          <option *ngFor="let sort of sortOptions" [value]="sort.value">
+            {{ sort.name }}
+          </option>
+        </select>
+          <h5 class="text-warning ml-3">Brands</h5>
+          <ul class="list-group my-3">
+              <li
+              *ngFor="let brand of brands"
+              class="list-group-item"
+              [class.active]="brand.id === this.storeParams.brandId"
+              [value]="brand.id"
+              (click)="onBrandSelected(brand.id)"
+              >{{brand.name}}</li>
+          </ul>
+          <h5 class="text-warning ml-3">Types</h5>
+          <ul class="list-group my-3">
+              <li
+               *ngFor="let type of types"
+               class="list-group-item"
+              [class.active]="type.id === this.storeParams.typeId"
+              [value]="type.id"
+              (click)="onTypeSelected(type.id)"
+               >{{type.name}}</li>
+          </ul>
+        </ng-container>
+      </section>
+
+      <section class="col-9">
+          <div class="d-flex justify-content-between align-items-center pb-2">
+            <header>
+              <span *ngIf="totalCount && totalCount>0">
+                Showing
+                <strong>{{(this.storeParams.pageNumber-1)*this.storeParams.pageSize+1}} -
+                {{this.storeParams.pageNumber*this.storeParams.pageSize
+                  > this.totalCount
+                  ? this.totalCount
+                  : this.storeParams.pageNumber*this.storeParams.pageSize
+                }}
+              </strong> of <strong>{{this.totalCount}}</strong> Results</span>
+              <span *ngIf="totalCount === 0">There are <strong>0</strong> results for this filter</span>
+            </header>
+              <div class="form-inline mt-2">
+                <input (keyup.enter)="onSearch()" class="form-control mr-2" #search style="width:300px" placeholder="Search" type="text">
+                <button (click)="onSearch()" class="btn btn-outline-primary my-2">Search</button>
+                <button (click)="onReset()" class="btn btn-outline-primary ml-2 my-2">Reset</button>
+              </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <pagination
+              [boundaryLinks]="true"
+              [totalItems]="this.totalCount"
+              previousText="&lsaquo;"
+              (pageChanged)="onPageChanged($event)"
+              [itemsPerPage]="this.storeParams.pageSize"
+              [maxSize]="10"
+              nextText="&rsaquo;"
+              firstText="&laquo;"
+              lastText="&raquo;">
+            </pagination>
+          </div>
+          <div class="row row-cols-3 g-3">
+            <div class="col" *ngFor="let item of products">
+              <app-product-items [product]="item"></app-product-items>
+            </div>
+          </div>
+      </section>
+      <div class="d-flex justify-content-center">
+        <pagination
+          [boundaryLinks]="true"
+          [totalItems]="this.totalCount"
+          previousText="&lsaquo;"
+          (pageChanged)="onPageChanged($event)"
+          [itemsPerPage]="this.storeParams.pageSize"
+          [maxSize]="10"
+          nextText="&rsaquo;"
+          firstText="&laquo;"
+          lastText="&raquo;">
+        </pagination>
+      </div>
+</div>
+</div>
+
