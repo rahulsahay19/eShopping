@@ -1,6 +1,11 @@
 version: '3.4'
 
 services:
+  reverseproxy:
+    build:
+      context: .
+      dockerfile: ApiGateways/nginx/nginx.Dockerfile
+    
   catalogdb:
     image: mongo
     
@@ -52,15 +57,14 @@ services:
       context: .
       dockerfile: ApiGateways/Ocelot.ApiGateway/Dockerfile
       
-  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
-
-  kibana:
-    image: docker.elastic.co/kibana/kibana:7.9.2
+  identityserver:
+    image: ${DOCKER_REGISTRY-}identityserver
+    build:
+      context: .
+      dockerfile: Infrastructure/EShopping.Identity/Dockerfile
       
 volumes:
   mongo_data:
   portainer_data:
   postgres_data:
-  pgadmin_data:
-  elasticsearch-data:
+  pgadmin_data:   

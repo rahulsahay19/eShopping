@@ -109,7 +109,10 @@
         }
       ],
       "UpstreamPathTemplate": "/Basket/CreateBasket",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "EShoppingGatewayAuthScheme"
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Basket/Checkout",
@@ -162,7 +165,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "host.docker.internal",
-          "Port": "9003"
+          "Port": "9004"
         }
       ],
       "UpstreamPathTemplate": "/Order/{userName}",

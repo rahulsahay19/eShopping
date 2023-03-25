@@ -4,7 +4,6 @@ using Basket.Application.Mappers;
 using Basket.Application.Queries;
 using Basket.Application.Responses;
 using Basket.Core.Entities;
-using Common.Logging.Correlation;
 using EventBus.Messages.Events;
 using MassTransit;
 using MediatR;
@@ -16,16 +15,11 @@ public class BasketController : ApiController
 {
     private readonly IMediator _mediator;
     private readonly IPublishEndpoint _publishEndpoint;
-    private readonly ILogger<BasketController> _logger;
-    private readonly ICorrelationIdGenerator _correlationIdGenerator;
-
-    public BasketController(IMediator mediator, IPublishEndpoint publishEndpoint, ILogger<BasketController> logger, ICorrelationIdGenerator correlationIdGenerator)
+    
+    public BasketController(IMediator mediator, IPublishEndpoint publishEndpoint)
     {
         _mediator = mediator;
         _publishEndpoint = publishEndpoint;
-        _logger = logger;
-        _correlationIdGenerator = correlationIdGenerator;
-        _logger.LogInformation("CorrelationId {correlationId}:", _correlationIdGenerator.Get());
     }
 
     [HttpGet]
@@ -42,6 +36,7 @@ public class BasketController : ApiController
     [ProducesResponseType(typeof(ShoppingCartResponse), (int) HttpStatusCode.OK)]
     public async Task<ActionResult<ShoppingCartResponse>> UpdateBasket([FromBody] CreateShoppingCartCommand createShoppingCartCommand)
     {
+        
         var basket = await _mediator.Send(createShoppingCartCommand);
         return Ok(basket);
     }
@@ -71,7 +66,6 @@ public class BasketController : ApiController
 
         var eventMesg = BasketMapper.Mapper.Map<BasketCheckoutEvent>(basketCheckout);
         eventMesg.TotalPrice = basket.TotalPrice;
-        eventMesg.CorrelationId = _correlationIdGenerator.Get();
         await _publishEndpoint.Publish(eventMesg);
         //remove the basket
         var deleteQuery = new DeleteBasketByUserNameQuery(basketCheckout.UserName);
