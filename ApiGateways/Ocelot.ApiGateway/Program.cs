@@ -1,4 +1,6 @@
-using Serilog;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 
 namespace Ocelot.ApiGateway;
 
@@ -17,5 +19,5 @@ public class Program
             }).ConfigureWebHostDefaults(webBuilder =>
             {
                 webBuilder.UseStartup<Startup>();
-            }).UseSerilog(Common.Logging.Logging.ConfigureLogger);
+            });
 }

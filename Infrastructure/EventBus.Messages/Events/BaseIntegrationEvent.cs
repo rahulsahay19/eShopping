@@ -3,18 +3,18 @@ namespace EventBus.Messages.Events;
 public class BaseIntegrationEvent
 {
     //CO-Relation Id
-    public string CorrelationId { get; set; }
+    public Guid Id { get; private set; }
     public DateTime CreationDate { get; private set; }
 
     public BaseIntegrationEvent()
     {
-        CorrelationId = Guid.NewGuid().ToString();
+        Id = Guid.NewGuid();
         CreationDate = DateTime.UtcNow;
     }
 
-    public BaseIntegrationEvent(Guid correlationId, DateTime creationDate)
+    public BaseIntegrationEvent(Guid id, DateTime creationDate)
     {
-        CorrelationId = correlationId.ToString();
+        Id = id;
         CreationDate = creationDate;
     }
 }
