@@ -27,7 +27,6 @@ public class Startup
         services.AddInfraServices(Configuration);
         services.AddAutoMapper(typeof(Startup));
         services.AddScoped<BasketOrderingConsumer>();
-        services.AddScoped<BasketOrderingConsumerV2>();
         services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1", new OpenApiInfo {Title = "Ordering.API", Version = "v1"});
@@ -37,7 +36,6 @@ public class Startup
         {
             //Mark this as consumer
             config.AddConsumer<BasketOrderingConsumer>();
-            config.AddConsumer<BasketOrderingConsumerV2>();
             config.UsingRabbitMq((ctx, cfg)=>
             {
                 cfg.Host(Configuration["EventBusSettings:HostAddress"]);
@@ -45,11 +43,6 @@ public class Startup
                 cfg.ReceiveEndpoint(EventBusConstants.BasketCheckoutQueue, c =>
                 {
                     c.ConfigureConsumer<BasketOrderingConsumer>(ctx);  
-                });
-                //V2 endpoint will pick items from here 
-                cfg.ReceiveEndpoint(EventBusConstants.BasketCheckoutQueueV2, c =>
-                {
-                    c.ConfigureConsumer<BasketOrderingConsumerV2>(ctx);  
                 });
             });
         });
