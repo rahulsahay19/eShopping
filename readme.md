@@ -31,17 +31,18 @@ Having a basic understanding of C#, Docker, and Angular would be really helpful!
 
 - https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/
 
-- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=1F2E6B5C5336CE822FE3
+- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=F5B7693C51A1F32EE5DF
 
-- https://www.udemy.com/course/securing-microservices-using-identity-server-4/?couponCode=F3CAB513C79CB5B09B37
+- https://www.udemy.com/course/securing-microservices-using-identity-server-4/?couponCode=26506A5A81641F94B408
 
-- https://www.udemy.com/course/implementing-cross-cutting-concerns-for-aspnet-microservice/?couponCode=2FF2F8ED3851504C9432
+- https://www.udemy.com/course/implementing-cross-cutting-concerns-for-aspnet-microservice/?couponCode=8BC0558051CCA0B15B5F
 
-- https://www.udemy.com/course/versioning-microservices/?couponCode=791ACCB4E85BAD2E955E
+- https://www.udemy.com/course/versioning-microservices/?couponCode=8BC0558051CCA0B15B5F
 
-- https://www.udemy.com/course/building-ecommerce-angular-application/?couponCode=875C44899021806DE018
+- https://www.udemy.com/course/building-ecommerce-angular-application/?couponCode=6BB7F1022C40D1A30F5C
 
-- https://www.udemy.com/course/deploying-microservices-to-kubernetes-and-aks/?couponCode=80EF2825D877E4F9BADF
+- https://www.udemy.com/course/deploying-microservices-to-kubernetes-and-aks/?couponCode=7EC60FBABC906EEA3E51
+
 
 
 
