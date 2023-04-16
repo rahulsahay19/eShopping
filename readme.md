@@ -62,7 +62,7 @@ Having a basic understanding of C#, Docker, and Angular would be really helpful!
 
 - https://www.udemy.com/course/deploying-microservices-to-kubernetes-and-aks/?couponCode=7EC60FBABC906EEA3E51
 
-
+- https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=28DDD6110A094C1AB6C3
 
 
 ## Introduction
