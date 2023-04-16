@@ -5,10 +5,29 @@ Hi Friends,
 
 Microservices are a design pattern in which applications are composed of independent modules that communicate with each other within well defined boundaries. This makes it easier to develop, test, and deploy isolated parts of your application.
 
-In this particular section, you will be learning plethora of technologies coming together for the common purpose. In the first segment, you will be building Microservices module using clean architecture. You will also be implementing CQRS design pattern in order to implement the clean architecture design. Here, you will learn how to apply all the industry best practices together. This series is designed using .Net Core 6 and Angular 15.
+Welcome to "Microservices learning series" - the ultimate course for developers who want to learn how to build scalable, efficient, and robust Microservices using the .Net Core platform along with Docker, Kubernetes, Identity Server 4, Rabbit MQ, Angular 15, GRPC, Istio Service Mesh, SQL Server, MongoDB, PostGreSQL, Redis, Ocelot, Nginx, Azure, Helm Charts, and Auto Scale.
 
-This course is part of Microservices series where in you will learn all minute details related to Microservices. During this learning path, you will learn how to connect the dots using different technologies and tooling. This course "Getting Started with Microservices using Clean Architecture" is the first part of the series.
+In this comprehensive course, you'll gain hands-on experience with Docker and Kubernetes to deploy and manage your Microservices. You'll learn how to integrate Identity Server 4 for secure authentication and authorization, Rabbit MQ for messaging, and GRPC for efficient communication between Microservices.
 
+You'll also learn how to use Istio Service Mesh to manage Microservices traffic, and how to configure and optimize SQL Server, MongoDB, PostGreSQL, and Redis for your Microservices. You'll use Ocelot and Nginx to manage your Microservices API gateway and deploy your Microservices to Azure using Helm Charts.
+
+By the end of this course, you'll have a solid understanding of how to design, develop, and deploy Microservices using the latest industry-standard tools and practices, including auto-scaling.
+
+Who Should Take This Course?
+
+- Freshers who want to learn how to build scalable and efficient systems using Microservices architecture.
+
+- Junior Developers who are looking to level up their skills and gain experience building real-world Microservices applications.
+
+- Mid-Level Developers who want to learn how to build and deploy Microservices using the latest industry-standard tools and practices.
+
+- Senior Developers who are looking to stay ahead of the curve and keep their skills up-to-date with the latest trends and technologies.
+
+- Software Architects who want to learn how to design and develop scalable, distributed, and fault-tolerant systems using Microservices.
+
+- Technical Leads who want to gain a deeper understanding of Microservices architecture and lead their teams in building scalable and efficient systems.
+
+Enroll now and take the next step in your Microservices journey. 
 Other parts include
 
 2. Securing Microservices using Identity Server 4
