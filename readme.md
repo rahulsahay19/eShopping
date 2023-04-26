@@ -104,6 +104,25 @@ Client Structure goes like
 
 Every effort applied to make this project complete and accurate to the topic, but no warranty is implied. Any implementation in this project are MY OWN and also borrowed from best practices segment. ALL content presented AS-IS, for learning purposes only. Also this course will go  keep updated as and when new and stable framework gets released.
 
+### Installation
+Follow these steps to get your development environment set up: (Before Run Start the Docker Desktop)
+1. Clone the repository
+2. Once Docker for Desktop is installed, go to the **Settings > Advanced option**, from the Docker icon in the system tray, to configure the minimum amount of memory and CPU like so:
+* **Memory: 7 GB**
+* CPU: 5
+3. At the root directory which include **docker-compose.yml** files, run below command:
+```csharp
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+```
+
+![image](https://user-images.githubusercontent.com/3886381/221078010-61bd0cc8-af27-473a-9e96-9199668cd9d7.png)
+
+## Project Overview
+![image](https://user-images.githubusercontent.com/3886381/221078142-269efa48-865c-42fe-8304-7c0d69603f52.png)
+
+## Technologies Used
+![image](https://user-images.githubusercontent.com/3886381/234681214-9891c443-f0f1-4066-baca-effdee7f183d.png)
+
 ## Workflow
 
 ![image](https://user-images.githubusercontent.com/3886381/223646965-ed342a32-e0ce-48cf-a6f7-f4603638a04a.png)
@@ -121,23 +140,6 @@ Every effort applied to make this project complete and accurate to the topic, bu
 ![image](https://user-images.githubusercontent.com/3886381/223646965-ed342a32-e0ce-48cf-a6f7-f4603638a04a.png)
 
 ![image](https://user-images.githubusercontent.com/3886381/223648742-3a9c620a-1205-48b8-b67f-0bd00565ea57.png)
-
-
-### Installation
-Follow these steps to get your development environment set up: (Before Run Start the Docker Desktop)
-1. Clone the repository
-2. Once Docker for Desktop is installed, go to the **Settings > Advanced option**, from the Docker icon in the system tray, to configure the minimum amount of memory and CPU like so:
-* **Memory: 7 GB**
-* CPU: 5
-3. At the root directory which include **docker-compose.yml** files, run below command:
-```csharp
-docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
-```
-
-![image](https://user-images.githubusercontent.com/3886381/221078010-61bd0cc8-af27-473a-9e96-9199668cd9d7.png)
-
-## Project Overview
-![image](https://user-images.githubusercontent.com/3886381/221078142-269efa48-865c-42fe-8304-7c0d69603f52.png)
 
 ## Pub/Sub Pattern
 
