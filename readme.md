@@ -1,5 +1,7 @@
 # .Net Core Microservices using Clean Architecture Implementation
 
+![image](https://user-images.githubusercontent.com/3886381/221078010-61bd0cc8-af27-473a-9e96-9199668cd9d7.png)
+
 
 Hi Friends,
 
@@ -114,8 +116,6 @@ Follow these steps to get your development environment set up: (Before Run Start
 ```csharp
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
-
-![image](https://user-images.githubusercontent.com/3886381/221078010-61bd0cc8-af27-473a-9e96-9199668cd9d7.png)
 
 ## Project Overview
 ![image](https://user-images.githubusercontent.com/3886381/221078142-269efa48-865c-42fe-8304-7c0d69603f52.png)
