@@ -58,7 +58,7 @@ Having a basic understanding of C#, Docker, and Angular would be really helpful!
 
 - https://www.udemy.com/course/implementing-cross-cutting-concerns-for-aspnet-microservice/?couponCode=8BC0558051CCA0B15B5F
 
-- https://www.udemy.com/course/versioning-microservices/?couponCode=8BC0558051CCA0B15B5F
+- https://www.udemy.com/course/versioning-microservices/?couponCode=9848EA894B67440288AE
 
 - https://www.udemy.com/course/building-ecommerce-angular-application/?couponCode=6BB7F1022C40D1A30F5C
 
