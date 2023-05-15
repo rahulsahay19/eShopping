@@ -50,7 +50,7 @@ Having a basic understanding of C#, Docker, and Angular would be really helpful!
 
 ## Course Links:
 
-- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/
+- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=8455812DC6803CE6D2C7
 
 - https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=AAF3D78E83EB71BC42D9
 
