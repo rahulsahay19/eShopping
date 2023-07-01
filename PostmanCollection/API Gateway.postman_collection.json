@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "2ecfb016-7569-4abe-8476-f1c4df9dd3f5",
+		"name": "API Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10974791"
+	},
+	"item": [
+		{
+			"name": "Get Products By Brand Name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/Catalog/GetProductsByBrandName/Adidas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Catalog",
+						"GetProductsByBrandName",
+						"Adidas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/Catalog/GetAllProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Catalog",
+						"GetAllProducts"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Adidas",
+							"disabled": true
+						},
+						{
+							"key": "brandId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "typeId",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products using Https",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NDQ0NTgyODM4RkQ0MTAzNDQ0MTdDQzZFNTQwMTEwIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2NzcyMTk5MDYsImV4cCI6MTY3NzIyMzUwNiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOSIsImF1ZCI6WyJDYXRhbG9nIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOS9yZXNvdXJjZXMiXSwiY2xpZW50X2lkIjoiQ2F0YWxvZ0FwaUNsaWVudCIsImp0aSI6IjUyNEE0Mzg0MzkwQTY0N0E0OTZBOUNEQUNCRkFCREEyIiwiaWF0IjoxNjc3MjE5OTA2LCJzY29wZSI6WyJjYXRhbG9nYXBpLnJlYWQiXX0.EEDsU275DF9YiRC5ubLQeIRPcKGYtqXPOFqCU4xxQzc5Q-4dweJm-B3RdgkadUyroWnEuUopYb5be2xBCutXPD60yFEvCYo19xZniVYlb7Uj5GDy9moh-bHQWWSo54IokqDMTBKbSN17-xpRcPmt160Me60BRjWjD3gLAnCuQnrnOZDG9oyCSop6XxVg-4JiGt0K6XFw6O6EFe-DhXpz_720dXZgpJP7Wh6Gu8zvyoLjP-bBnEqttgeDylMKbc1W93AZ9Da2q3rLHlFrUv96XOhkMONGEILqRA8KhJwR0UXp_MMfS3NbPL9EKAxEfYdQHReT1rozXu8-IxYjes7EPg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9010/Catalog/GetAllProducts?sort=priceAsc&pageIndex=1&pageSize=10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Catalog",
+						"GetAllProducts"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "priceAsc"
+						},
+						{
+							"key": "search",
+							"value": "Adidas",
+							"disabled": true
+						},
+						{
+							"key": "pageIndex",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "brandId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "typeId",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products Nginx",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://id-local.eshopping.com:44344/Catalog/GetAllProducts/",
+					"protocol": "https",
+					"host": [
+						"id-local",
+						"eshopping",
+						"com"
+					],
+					"port": "44344",
+					"path": [
+						"Catalog",
+						"GetAllProducts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Brands",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/Catalog/GetAllBrands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Catalog",
+						"GetAllBrands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Types",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/Catalog/GetAllTypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Catalog",
+						"GetAllTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/Catalog/GetProductById/602d2149e773f2a3990b47f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Catalog",
+						"GetProductById",
+						"602d2149e773f2a3990b47f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Basket by UserName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/Basket/GetBasket/rahul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Basket",
+						"GetBasket",
+						"rahul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order by UserName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/Order/rahul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Order",
+						"rahul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Basket",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NDQ0NTgyODM4RkQ0MTAzNDQ0MTdDQzZFNTQwMTEwIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2NzY1NDgxMTgsImV4cCI6MTY3NjU1MTcxOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOSIsImF1ZCI6WyJCYXNrZXQiLCJFU2hvcHBpbmdHYXRld2F5IiwiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOS9yZXNvdXJjZXMiXSwiY2xpZW50X2lkIjoiRVNob3BwaW5nR2F0ZXdheUNsaWVudCIsImp0aSI6IjcwNzNBNTM0NTY5NkJFRDM0RUFEOTNBMDE5NjdBMTZFIiwiaWF0IjoxNjc2NTQ4MTE4LCJzY29wZSI6WyJiYXNrZXRhcGkiLCJlc2hvcHBpbmdnYXRld2F5Il19.d-B5HczEUKCov476MVIL6E1KiNDXbNAxXxfC6otF_XZZOl2gMa6naB8zCBsLu7FPDqC8RDwYYHIExXjFLm3hvK5beGvV7Eybo6ALG2BkLVJa4FAlE6OAsjuNajxrTOdlu4pQEgPMyCxI2VqI1zxSKpv9gztbHKpLQy-B3EK9C6URhSkBVTAdjE4PAj1L_u0aymwGIonsynlNK2Q4tIMqjUT75gqJNfgfGETOP0PnHFuj6vIKkRJAJZCDy2SprMhaHIAvZEgcn48pHBp8UQ5Fk9-h5j0SgPThT0Ed3CLlkNuOJdL7GORiakY5sAsXXQgRysTPqp-WBHUuqlWNBnKKIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n    \"items\": [\n        {\n            \"quantity\": 3,\n            \"imageFile\": \"images/products/adidas_shoe-1.png\",\n            \"price\": 3500.0,\n            \"productId\": \"602d2149e773f2a3990b47f5\",\n            \"productName\": \"Adidas Quick Force Indoor Badminton Shoes\"\n        }\n    ],\n    \"totalPrice\": 3500.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9010/Basket/CreateBasket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Basket",
+						"CreateBasket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Basket",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NDQ0NTgyODM4RkQ0MTAzNDQ0MTdDQzZFNTQwMTEwIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2NzY1NDUwNTUsImV4cCI6MTY3NjU0ODY1NSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOSIsImF1ZCI6WyJCYXNrZXQiLCJFU2hvcHBpbmdHYXRld2F5IiwiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOS9yZXNvdXJjZXMiXSwiY2xpZW50X2lkIjoiRVNob3BwaW5nR2F0ZXdheUNsaWVudCIsImp0aSI6IkQzMzBFQzJCNDY1NUNCQkZBMDNBMUJBQ0JDOUNFNEFEIiwiaWF0IjoxNjc2NTQ1MDU1LCJzY29wZSI6WyJiYXNrZXRhcGkiLCJlc2hvcHBpbmdnYXRld2F5Il19.dW3ypLqA8j-0JsH7_IWTLlk1uVEFjr8RBCGNT-ykKxkl4988tgsIiMqJPJwA5ycwxL_nqamE5hxBIH7bjOlOu2YMlDVwqy7nThG8vlatMFUGiNa3tb8-bWFqly2M6qsuqTkkgCofgQQ0awesRy2rryHp1O8_p9E8mN-vXJLIUmqZO6k98v4Cm9DeC-t_IA3ga-z-rugnZkH2v0O4XlbYvvNZW7HbcbqXk2uCJQ2GP0Xi_HZM-j8aq1g9tU32j-ajp5thU5EIddrCBvrHItMDbtKhnFRmFDraz7e6Q46k-QPC3xIqjeo4wPiQ1ARmFCvAb1_eAPbxQcQmxai3CKMVWA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"items\": [\n    {\n      \"quantity\": 5,\n      \"color\": \"red\",\n      \"price\": 700,\n      \"productId\": \"602d2149e773f2a3990b47f5\",\n      \"productName\": \"IPhone X\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9010/Basket/GetBasket/rahul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Basket",
+						"GetBasket",
+						"rahul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Basket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"items\": [\n    {\n      \"quantity\": 5,\n      \"color\": \"red\",\n      \"price\": 700,\n      \"productId\": \"602d2149e773f2a3990b47f5\",\n      \"productName\": \"IPhone X\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9010/Basket/DeleteBasket/rahul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Basket",
+						"DeleteBasket",
+						"rahul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout Basket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"totalPrice\": 0,\n  \"firstName\": \"Rahul\",\n  \"lastName\": \"Sahay\",\n  \"emailAddress\": \"rahulsahay@eshop.net\",\n  \"addressLine\": \"Bangalore\",\n  \"country\": \"India\",\n  \"state\": \"KA\",\n  \"zipCode\": \"560001\",\n  \"cardName\": \"Visa\",\n  \"cardNumber\": \"1234567890123456\",\n  \"expiration\": \"12/25\",\n  \"cvv\": \"123\",\n  \"paymentMethod\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9010/Basket/Checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"Basket",
+						"Checkout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NDQ0NTgyODM4RkQ0MTAzNDQ0MTdDQzZFNTQwMTEwIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2NzcyMTk5MDYsImV4cCI6MTY3NzIyMzUwNiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOSIsImF1ZCI6WyJDYXRhbG9nIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOS9yZXNvdXJjZXMiXSwiY2xpZW50X2lkIjoiQ2F0YWxvZ0FwaUNsaWVudCIsImp0aSI6IjUyNEE0Mzg0MzkwQTY0N0E0OTZBOUNEQUNCRkFCREEyIiwiaWF0IjoxNjc3MjE5OTA2LCJzY29wZSI6WyJjYXRhbG9nYXBpLnJlYWQiXX0.EEDsU275DF9YiRC5ubLQeIRPcKGYtqXPOFqCU4xxQzc5Q-4dweJm-B3RdgkadUyroWnEuUopYb5be2xBCutXPD60yFEvCYo19xZniVYlb7Uj5GDy9moh-bHQWWSo54IokqDMTBKbSN17-xpRcPmt160Me60BRjWjD3gLAnCuQnrnOZDG9oyCSop6XxVg-4JiGt0K6XFw6O6EFe-DhXpz_720dXZgpJP7Wh6Gu8zvyoLjP-bBnEqttgeDylMKbc1W93AZ9Da2q3rLHlFrUv96XOhkMONGEILqRA8KhJwR0UXp_MMfS3NbPL9EKAxEfYdQHReT1rozXu8-IxYjes7EPg"
+		}
+	]
+}

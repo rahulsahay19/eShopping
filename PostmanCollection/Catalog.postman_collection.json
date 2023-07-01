@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "9c2d355a-debb-49d9-ba56-cf4ef9d61252",
+		"name": "Catalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10974791"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjA2RjI1QzdDNDJEMTBGRDJDNjcwRENGNDNCMTNEODc2IiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2NzQ4OTY0OTUsImV4cCI6MTY3NDkwMDA5NSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOSIsImF1ZCI6WyJDYXRhbG9nIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwOS9yZXNvdXJjZXMiXSwiY2xpZW50X2lkIjoiQ2F0YWxvZ0FwaUNsaWVudCIsImp0aSI6IjczQjMxMjBCMzZEMDJGQkVBMTREMzk3ODg5QkY5OTVCIiwiaWF0IjoxNjc0ODk2NDk1LCJzY29wZSI6WyJjYXRhbG9nYXBpIl19.fV-qq2MZFKP_45_mjr_LqquWKirGj5ERdFZV2_N4ckT3Dj06WTqOYdiPaOkHu-nCHdIdGcgEllJEuOrOzQZv4lfJY7zbXZtT7fuNiRFCSYTp2omK38DvIir7saK7BsY2tAk4K_bTxznRRvUcOevnU98EnAsXdtjko_bjDiwVjj6uDI7HD3fPB71AwDJ_Rhd1eoyKlWL-aMS5wIA8b-lEXCXlN3yc8KbhA3iRlCnjFkoCwYtzGiwESb_LRR77cLaWC2Ec0oyKSC-gjE932VBRhk_4a8yZIMCATn7A68bNRh_rgLhlEzDj08jZ-XnKqqbtprdck653BQd3ZL5Rob2VEw",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/Catalog/GetAllProducts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"Catalog",
+						"GetAllProducts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

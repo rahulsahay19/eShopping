@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "6ba24052-d60c-4436-99bc-2185e028aef3",
+		"name": "Ordering API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10974791"
+	},
+	"item": [
+		{
+			"name": "GetOrderByUserName",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9003/api/v1/Order/rahul",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"api",
+						"v1",
+						"Order",
+						"rahul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"totalPrice\": 1900,\n  \"firstName\": \"Rahul\",\n  \"lastName\": \"Sahay\",\n  \"emailAddress\": \"rahulsahay@eshop.net\",\n  \"addressLine\": \"Bangalore\",\n  \"country\": \"India\",\n  \"state\": \"Karnataka\",\n  \"zipCode\": \"560001\",\n  \"cardName\": \"Visa\",\n  \"cardNumber\": \"1234567890123456\",\n  \"expiration\": \"12/25\",\n  \"cvv\": \"123\",\n  \"paymentMethod\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9003/api/v1/Order/",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"api",
+						"v1",
+						"Order",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyOrder",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"totalPrice\": 1900,\n  \"firstName\": \"Rahul\",\n  \"lastName\": \"Sahay\",\n  \"emailAddress\": \"rahulsahay@eshop.net\",\n  \"addressLine\": \"Bangalore\",\n  \"country\": \"India\",\n  \"state\": \"Karnataka\",\n  \"zipCode\": \"560002\",\n  \"cardName\": \"Visa\",\n  \"cardNumber\": \"1234567890123456\",\n  \"expiration\": \"12/25\",\n  \"cvv\": \"123\",\n  \"paymentMethod\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9003/api/v1/Order/",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"api",
+						"v1",
+						"Order",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9003/api/v1/Order/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"api",
+						"v1",
+						"Order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

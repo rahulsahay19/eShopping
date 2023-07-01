@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "5f12101f-7a87-4421-afff-ef011396a0ce",
+		"name": "Basket API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10974791"
+	},
+	"item": [
+		{
+			"name": "Post Basket",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"items\": [\n    {\n      \"quantity\": 2,\n      \"price\": 3500,\n      \"productId\": \"602d2149e773f2a3990b47f5\",\n      \"imageFile\": \"images/products/adidas_shoe-1.png\",\n      \"productName\": \"Adidas Quick Force Indoor Badminton Shoes\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/v1/Basket/CreateBasket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"v1",
+						"Basket",
+						"CreateBasket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Basket",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/api/v1/Basket/GetBasket/rahul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"v1",
+						"Basket",
+						"GetBasket",
+						"rahul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout Basket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"totalPrice\": 0,\n  \"firstName\": \"Rahul\",\n  \"lastName\": \"Sahay\",\n  \"emailAddress\": \"rahulsahay@eshop.net\",\n  \"addressLine\": \"Bangalore\",\n  \"country\": \"India\",\n  \"state\": \"KA\",\n  \"zipCode\": \"560001\",\n  \"cardName\": \"Visa\",\n  \"cardNumber\": \"1234567890123456\",\n  \"expiration\": \"12/25\",\n  \"cvv\": \"123\",\n  \"paymentMethod\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/v1/Basket/Checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"v1",
+						"Basket",
+						"Checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout Basket v2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"rahul\",\n  \"totalPrice\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/v2/Basket/Checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"v2",
+						"Basket",
+						"Checkout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

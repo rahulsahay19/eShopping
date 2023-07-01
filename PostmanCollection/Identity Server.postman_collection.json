@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "945a7838-59a6-45a0-9dbd-f82bea6c0385",
+		"name": "Identity Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10974791"
+	},
+	"item": [
+		{
+			"name": "Discovery Document",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9009/.well-known/openid-configuration",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9009",
+					"path": [
+						".well-known",
+						"openid-configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9009/connect/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9009",
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Gateway Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9009/connect/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9009",
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Gateway Token Nginx",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "eshoppinggateway basketapi",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "EShoppingGatewayClient",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "5c7fd5c5-61a7-4668-ac57-2b4591ec26d2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://id-local.eshopping.com:44344/connect/token",
+					"protocol": "https",
+					"host": [
+						"id-local",
+						"eshopping",
+						"com"
+					],
+					"port": "44344",
+					"path": [
+						"connect",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"disabled": true
+						},
+						{
+							"key": "scope",
+							"value": "eshoppinggateway basketapi",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "EShoppingGatewayClient",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "5c7fd5c5-61a7-4668-ac57-2b4591ec26d2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Basket Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9009/connect/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9009",
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token 2nd Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:9009/connect/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9009",
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
