@@ -48,25 +48,6 @@ This course is suitable for anyone who wants to develop their personal and profe
 
 Having a basic understanding of C#, Docker, and Angular would be really helpful!. All you need is an open mind and a willingness to learn. By the end of this course, you will have a deeper understanding of yourself and the world around you, and be equipped with practical tools to help you succeed.
 
-## Course Links:
-
-- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=8DABCECDD860965C2B62
-
-- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=E08EC922941D6EA83DF4
-
-- https://www.udemy.com/course/securing-microservices-using-identity-server-4/?couponCode=FA6189240CB6F408E1FF
-
-- https://www.udemy.com/course/implementing-cross-cutting-concerns-for-aspnet-microservice/?couponCode=50B534D355691262985F
-
-- https://www.udemy.com/course/versioning-microservices/?couponCode=D51FE66AB66F54B57333
-
-- https://www.udemy.com/course/building-ecommerce-angular-application/?couponCode=D3A55CD197C99FB03CE1
-
-- https://www.udemy.com/course/deploying-microservices-to-kubernetes-and-aks/?couponCode=063AB7E7F8129B036B78
-
-- https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=B941B48167D939DEB12E
-
-
 ## Introduction
 In this section, you will learn how to build full fledged Ecommerce app using asp.net core, docker, kubernetes, helm charts, service mesh and angular 15. Below are the key takeaways from this project. Anyone who wants to learn and write professional enterpise projects can refer this project. This project not only illustrates how to implement all layers to the point rather it adheres to best practices as followed by industry.
  
