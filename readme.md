@@ -14,40 +14,6 @@ In this comprehensive course, you'll gain hands-on experience with Docker and Ku
 You'll also learn how to use Istio Service Mesh to manage Microservices traffic, and how to configure and optimize SQL Server, MongoDB, PostGreSQL, and Redis for your Microservices. You'll use Ocelot and Nginx to manage your Microservices API gateway and deploy your Microservices to Azure using Helm Charts.
 
 By the end of this course, you'll have a solid understanding of how to design, develop, and deploy Microservices using the latest industry-standard tools and practices, including auto-scaling.
-
-Who Should Take This Course?
-
-- Freshers who want to learn how to build scalable and efficient systems using Microservices architecture.
-
-- Junior Developers who are looking to level up their skills and gain experience building real-world Microservices applications.
-
-- Mid-Level Developers who want to learn how to build and deploy Microservices using the latest industry-standard tools and practices.
-
-- Senior Developers who are looking to stay ahead of the curve and keep their skills up-to-date with the latest trends and technologies.
-
-- Software Architects who want to learn how to design and develop scalable, distributed, and fault-tolerant systems using Microservices.
-
-- Technical Leads who want to gain a deeper understanding of Microservices architecture and lead their teams in building scalable and efficient systems.
-
-Enroll now and take the next step in your Microservices journey. 
-Other parts include
-
-2. Securing Microservices using Identity Server 4
-
-3. Implementing Cross Cutting Concerns
-
-4. Versioning Microservices
-
-5. Building Angular Application for MicroServices
-
-6. Deploying Microservices to Kubernetes and AKS
-
-## Who Should Enroll
-
-This course is suitable for anyone who wants to develop their personal and professional skills. Whether you are a student, a working professional, an entrepreneur, or someone who simply wants to learn and grow, this course is for you.
-
-Having a basic understanding of C#, Docker, and Angular would be really helpful!. All you need is an open mind and a willingness to learn. By the end of this course, you will have a deeper understanding of yourself and the world around you, and be equipped with practical tools to help you succeed.
-
 ## Introduction
 In this section, you will learn how to build full fledged Ecommerce app using asp.net core, docker, kubernetes, helm charts, service mesh and angular 15. Below are the key takeaways from this project. Anyone who wants to learn and write professional enterpise projects can refer this project. This project not only illustrates how to implement all layers to the point rather it adheres to best practices as followed by industry.
  
