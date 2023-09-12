@@ -14,6 +14,26 @@ In this comprehensive course, you'll gain hands-on experience with Docker and Ku
 You'll also learn how to use Istio Service Mesh to manage Microservices traffic, and how to configure and optimize SQL Server, MongoDB, PostGreSQL, and Redis for your Microservices. You'll use Ocelot and Nginx to manage your Microservices API gateway and deploy your Microservices to Azure using Helm Charts.
 
 By the end of this course, you'll have a solid understanding of how to design, develop, and deploy Microservices using the latest industry-standard tools and practices, including auto-scaling.
+
+## Course Links:
+
+- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=FREEE-COURSE
+
+- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=SEPTOFFER
+
+- https://www.udemy.com/course/securing-microservices-using-identity-server-4/?couponCode=SEPTOFFER
+
+- https://www.udemy.com/course/implementing-cross-cutting-concerns-for-aspnet-microservice/?couponCode=SEPTOFFER
+
+- https://www.udemy.com/course/versioning-microservices/?couponCode=SEPTOFFER
+
+- https://www.udemy.com/course/building-ecommerce-angular-application/?couponCode=SEPTOFFER
+
+- https://www.udemy.com/course/deploying-microservices-to-kubernetes-and-aks/?couponCode=SEPTOFFER
+
+- https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=SEPTOFFER
+
+
 ## Introduction
 In this section, you will learn how to build full fledged Ecommerce app using asp.net core, docker, kubernetes, helm charts, service mesh and angular 15. Below are the key takeaways from this project. Anyone who wants to learn and write professional enterpise projects can refer this project. This project not only illustrates how to implement all layers to the point rather it adheres to best practices as followed by industry.
  
