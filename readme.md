@@ -17,21 +17,11 @@ By the end of this course, you'll have a solid understanding of how to design, d
 
 ## Course Links:
 
-- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=FREEE-COURSE
+- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=OCT-FREE
 
-- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=SEPTOFFER
+- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?referralCode=019110E378CFA3CEA9F5
 
-- https://www.udemy.com/course/securing-microservices-using-identity-server-4/?couponCode=SEPTOFFER
-
-- https://www.udemy.com/course/implementing-cross-cutting-concerns-for-aspnet-microservice/?couponCode=SEPTOFFER
-
-- https://www.udemy.com/course/versioning-microservices/?couponCode=SEPTOFFER
-
-- https://www.udemy.com/course/building-ecommerce-angular-application/?couponCode=SEPTOFFER
-
-- https://www.udemy.com/course/deploying-microservices-to-kubernetes-and-aks/?couponCode=SEPTOFFER
-
-- https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=SEPTOFFER
+- https://www.udemy.com/course/docker-for-net-and-angular-developers/?referralCode=60C74EE89BE626D6033D
 
 
 ## Introduction
