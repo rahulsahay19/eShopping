@@ -17,8 +17,6 @@ By the end of this course, you'll have a solid understanding of how to design, d
 
 ## Course Links:
 
-- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=OCT-FREE
-
 - https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?referralCode=019110E378CFA3CEA9F5
 
 - https://www.udemy.com/course/docker-for-net-and-angular-developers/?referralCode=60C74EE89BE626D6033D
