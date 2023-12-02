@@ -21,7 +21,11 @@ By the end of this course, you'll have a solid understanding of how to design, d
   
 - Microservices Course:- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=BEST-PRICE
 
-- Docker Course:- https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=BEST-PRICE 
+- Building FullStack App using .NetCore, Angular & ChatGPT:- https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=BEST-PRICE 
+
+- Docker Course:- https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=FLASH-SALE
+
+- AI Mastery:- https://www.udemy.com/course/ai-mastery-unleashed-chatgpt-and-beyond/?couponCode=FLASH-SALE 
 
 
 ## Introduction
