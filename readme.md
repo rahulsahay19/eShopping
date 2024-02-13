@@ -15,13 +15,12 @@ You'll also learn how to use Istio Service Mesh to manage Microservices traffic,
 
 By the end of this course, you'll have a solid understanding of how to design, develop, and deploy Microservices using the latest industry-standard tools and practices, including auto-scaling.
 
-![Course Link](https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=LTD-OFFER)
+Course Link:- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=LTD-OFFER
 
-## Course Links:
+## Other Courses:
 
     https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=FREE-OFFER
     https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=LTD-OFFER
-    https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=LTD-OFFER
     https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=LTD-OFFER
     https://www.udemy.com/course/ai-mastery-unleashed-chatgpt-and-beyond/?couponCode=LTD-OFFER
     https://www.udemy.com/course/building-fullstack-ecommerce-app-using-springboot-angular/?couponCode=OFFER-PRICE
