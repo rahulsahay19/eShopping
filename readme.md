@@ -15,19 +15,6 @@ You'll also learn how to use Istio Service Mesh to manage Microservices traffic,
 
 By the end of this course, you'll have a solid understanding of how to design, develop, and deploy Microservices using the latest industry-standard tools and practices, including auto-scaling.
 
-## Course Links:
-
-- Free Course:- https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?referralCode=4D823A32070DF730A57B
-  
-- Microservices Course:- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=BEST-PRICE
-
-- Building FullStack App using .NetCore, Angular & ChatGPT:- https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=BEST-PRICE 
-
-- Docker Course:- https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=FLASH-SALE
-
-- AI Mastery:- https://www.udemy.com/course/ai-mastery-unleashed-chatgpt-and-beyond/?couponCode=FLASH-SALE 
-
-
 ## Introduction
 In this section, you will learn how to build full fledged Ecommerce app using asp.net core, docker, kubernetes, helm charts, service mesh and angular 15. Below are the key takeaways from this project. Anyone who wants to learn and write professional enterpise projects can refer this project. This project not only illustrates how to implement all layers to the point rather it adheres to best practices as followed by industry.
  
