@@ -15,17 +15,57 @@ You'll also learn how to use Istio Service Mesh to manage Microservices traffic,
 
 By the end of this course, you'll have a solid understanding of how to design, develop, and deploy Microservices using the latest industry-standard tools and practices, including auto-scaling.
 
-Course Link:- https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=LTD-OFFER
+Who Should Take This Course?
 
-## Other Courses:
+- Freshers who want to learn how to build scalable and efficient systems using Microservices architecture.
 
-    https://www.udemy.com/course/getting-started-with-clean-architecture-using-net-core/?couponCode=FREE-OFFER
-    https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=LTD-OFFER
-    https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=LTD-OFFER
-    https://www.udemy.com/course/ai-mastery-unleashed-chatgpt-and-beyond/?couponCode=LTD-OFFER
-    https://www.udemy.com/course/building-fullstack-ecommerce-app-using-springboot-angular/?couponCode=OFFER-PRICE
-    https://www.udemy.com/course/quickstart-guide-to-custom-gpt-creation/?referralCode=731C4FF0ECFFA8613843
-    https://www.udemy.com/course/chatgpt-vs-bard/?referralCode=539E2D429B0D4949D3B3
+- Junior Developers who are looking to level up their skills and gain experience building real-world Microservices applications.
+
+- Mid-Level Developers who want to learn how to build and deploy Microservices using the latest industry-standard tools and practices.
+
+- Senior Developers who are looking to stay ahead of the curve and keep their skills up-to-date with the latest trends and technologies.
+
+- Software Architects who want to learn how to design and develop scalable, distributed, and fault-tolerant systems using Microservices.
+
+- Technical Leads who want to gain a deeper understanding of Microservices architecture and lead their teams in building scalable and efficient systems.
+
+Enroll now and take the next step in your Microservices journey. 
+Other parts include
+
+2. Securing Microservices using Identity Server 4
+
+3. Implementing Cross Cutting Concerns
+
+4. Versioning Microservices
+
+5. Building Angular Application for MicroServices
+
+6. Deploying Microservices to Kubernetes and AKS
+
+## Who Should Enroll
+
+This course is suitable for anyone who wants to develop their personal and professional skills. Whether you are a student, a working professional, an entrepreneur, or someone who simply wants to learn and grow, this course is for you.
+
+Having a basic understanding of C#, Docker, and Angular would be really helpful!. All you need is an open mind and a willingness to learn. By the end of this course, you will have a deeper understanding of yourself and the world around you, and be equipped with practical tools to help you succeed..
+
+## Course Links:
+
+- [Building FullStack E-Commerce App using SpringBoot & React](https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=A8A6B2854B95D295890E)
+
+- [Building FullStack E-Commerce App using SpringBoot & Angular](https://www.udemy.com/course/building-fullstack-e-commerce-app-using-springboot-react/?couponCode=OFFER-PRICE)
+
+- [Building FullStack App using .NetCore, Angular & ChatGPT](https://www.udemy.com/course/building-fullstack-ecommerce-app-using-springboot-angular/?couponCode=7A80B6DF0A4C00F18552)
+
+- [Creating .Net Core Microservices using Clean Architecture](https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=5760E3767FB037609F00)
+
+- [Docker & Kubernetes for .Net and Angular Developers](https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=93B20C9A9050BE62BCB8)
+
+- [AI Mastery Unleashed: ChatGPT and Beyond](https://www.udemy.com/course/ai-mastery-unleashed-chatgpt-and-beyond/?couponCode=5EF5ECDB220D21969B54)
+
+## Blog
+
+- [Medium](https://rahulsahay19.medium.com/)
+
 
 ## Introduction
 In this section, you will learn how to build full fledged Ecommerce app using asp.net core, docker, kubernetes, helm charts, service mesh and angular 15. Below are the key takeaways from this project. Anyone who wants to learn and write professional enterpise projects can refer this project. This project not only illustrates how to implement all layers to the point rather it adheres to best practices as followed by industry.
