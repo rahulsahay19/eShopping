@@ -50,13 +50,13 @@ Having a basic understanding of C#, Docker, and Angular would be really helpful!
 
 ## Course Links:
 
-- [Building FullStack E-Commerce App using SpringBoot & React](https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=A8A6B2854B95D295890E)
+- [Creating .Net Core Microservices using Clean Architecture](https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=A8A6B2854B95D295890E)
+  
+- [Building FullStack E-Commerce App using SpringBoot & React](https://www.udemy.com/course/building-fullstack-e-commerce-app-using-springboot-react/?couponCode=OFFER-PRICE)
 
-- [Building FullStack E-Commerce App using SpringBoot & Angular](https://www.udemy.com/course/building-fullstack-e-commerce-app-using-springboot-react/?couponCode=OFFER-PRICE)
+- [Building FullStack E-Commerce App using SpringBoot & Angular](https://www.udemy.com/course/building-fullstack-ecommerce-app-using-springboot-angular/?couponCode=7A80B6DF0A4C00F18552)
 
-- [Building FullStack App using .NetCore, Angular & ChatGPT](https://www.udemy.com/course/building-fullstack-ecommerce-app-using-springboot-angular/?couponCode=7A80B6DF0A4C00F18552)
-
-- [Creating .Net Core Microservices using Clean Architecture](https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=5760E3767FB037609F00)
+- [Building FullStack App using .NetCore, Angular & ChatGPT](https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=5760E3767FB037609F00)
 
 - [Docker & Kubernetes for .Net and Angular Developers](https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=93B20C9A9050BE62BCB8)
 
