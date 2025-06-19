@@ -48,20 +48,6 @@ This course is suitable for anyone who wants to develop their personal and profe
 
 Having a basic understanding of C#, Docker, and Angular would be really helpful!. All you need is an open mind and a willingness to learn. By the end of this course, you will have a deeper understanding of yourself and the world around you, and be equipped with practical tools to help you succeed..
 
-## Course Links:
-
-- [Creating .Net Core Microservices using Clean Architecture](https://www.udemy.com/course/creating-net-core-microservices-using-clean-architecture/?couponCode=A8A6B2854B95D295890E)
-  
-- [Building FullStack E-Commerce App using SpringBoot & React](https://www.udemy.com/course/building-fullstack-e-commerce-app-using-springboot-react/?couponCode=OFFER-PRICE)
-
-- [Building FullStack E-Commerce App using SpringBoot & Angular](https://www.udemy.com/course/building-fullstack-ecommerce-app-using-springboot-angular/?couponCode=7A80B6DF0A4C00F18552)
-
-- [Building FullStack App using .NetCore, Angular & ChatGPT](https://www.udemy.com/course/building-fullstack-app-using-netcore-angular-chatgpt/?couponCode=5760E3767FB037609F00)
-
-- [Docker & Kubernetes for .Net and Angular Developers](https://www.udemy.com/course/docker-for-net-and-angular-developers/?couponCode=93B20C9A9050BE62BCB8)
-
-- [AI Mastery Unleashed: ChatGPT and Beyond](https://www.udemy.com/course/ai-mastery-unleashed-chatgpt-and-beyond/?couponCode=5EF5ECDB220D21969B54)
-
 ## Blog
 
 - [Medium](https://rahulsahay19.medium.com/)
