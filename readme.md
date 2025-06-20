@@ -102,10 +102,6 @@ Follow these steps to get your development environment set up: (Before Run Start
 ```csharp
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
-
-## Project Overview
-![image](https://user-images.githubusercontent.com/3886381/221078142-269efa48-865c-42fe-8304-7c0d69603f52.png)
-
 ## Technologies Used
 ![image](https://user-images.githubusercontent.com/3886381/234681214-9891c443-f0f1-4066-baca-effdee7f183d.png)
 
